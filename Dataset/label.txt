@@ -1,0 +1,4 @@
+/guanjieye/2.png	2
+/guanjieye/3.png	6
+/guanjieye/4.png	6
+/guanjieye/5.png	1
