@@ -16,3 +16,6 @@ predict_model.py is the code file for testing data
 
 label.txt is an example of the used label
 
+
+   [Pre trained models are saved in
+](https://huggingface.co/YU123ing/AlexNet_modified/blob/main/final_model.pth)
