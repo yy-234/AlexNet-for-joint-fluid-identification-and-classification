@@ -1,12 +1,6 @@
 # AlexNet-for-joint-fluid-identification-and-classification
 We use a modified AlexNet to perform 6-class classification on bone joint fluid
 
-
-#Model
-
-
-
-
 #Image Preprocess
 
 The original test strip image samples vary in size, so the system first adjusts all test strip images to a uniform size of 100*100 using linear interpolation.
@@ -19,4 +13,6 @@ The original test strip image samples vary in size, so the system first adjusts 
 Based on the number of white blood cells, the test strips are categorized into the following six classes: test strips with a white blood cell count in the range of [0,1000) belong to Class 1; test strips with a white blood cell count in the range of [1000,2000) belong to Class 2; test strips with a white blood cell count in the range of [2000,3000) belong to Class 3; test strips with a white blood cell count in the range of [3000,4000) belong to Class 4; test strips with a white blood cell count in the range of [4000,5000) belong to Class 5; and test strips with a white blood cell count in the range of [5000,+∞) belong to Class 6.
 
 predict_model.py is the code file for testing data
+
+label.txt is an example of the used label
 
