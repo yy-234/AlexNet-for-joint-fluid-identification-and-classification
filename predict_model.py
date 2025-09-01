@@ -89,15 +89,9 @@ class PredictionDataset(Dataset):
         return image, label, image_path
 
 def create_model():
-    """Create modified AlexNet model"""
-    # Load pre-trained AlexNet model
     model = models.alexnet(pretrained=True)
-    
-    # Modify fully connected layer dimensions
-    # Change dimensions of 1st and 2nd fully connected layers to 512
     model.classifier[1] = nn.Linear(9216, 512)  # First fully connected layer
     model.classifier[4] = nn.Linear(512, 512)   # Second fully connected layer
-    # Change dimension of last fully connected layer to 6
     model.classifier[6] = nn.Linear(512, 6)     # Last fully connected layer
     
     return model
